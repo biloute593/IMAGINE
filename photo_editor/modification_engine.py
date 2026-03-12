@@ -190,6 +190,7 @@ class ObjectModificationEngine:
         result = image.copy()
         if delta > 0:
             # Rougher → slight blur
+            # GaussianBlur requires odd kernel size; bitwise OR with 1 ensures odd
             ksize = max(3, int(delta * 10) | 1)
             blurred = cv2.GaussianBlur(result, (ksize, ksize), 0)
             result[mask] = blurred[mask]

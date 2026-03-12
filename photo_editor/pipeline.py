@@ -138,7 +138,7 @@ class PhotoEditorPipeline:
 
         # 7. RÈGLE 7 — Cavity inpainting BEFORE propagation if object moved
         if mask_moved:
-            result_image = self.inpainter.inpaint(result_image, mask.astype(bool))
+            result_image = self.inpainter.inpaint(result_image, mask)
 
         # 8. Apply modification (RÈGLE 4 — material check inside engine)
         result_image = self.engine.apply(result_image, mask, correction, mat)
