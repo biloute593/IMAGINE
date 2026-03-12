@@ -1,0 +1,26 @@
+# Photo Editor Interactif — dépendances
+# Python 3.10+
+
+# Vision & traitement d'image (CPU)
+numpy>=1.24.0
+opencv-python>=4.8.0
+scikit-image>=0.21.0
+scipy>=1.11.0
+
+# Modèles de profondeur (CPU)
+torch>=2.1.0
+torchvision>=0.16.0
+timm>=0.9.0
+
+# LLM local (Ollama)
+ollama>=0.1.0
+
+# LLM cloud
+google-generativeai>=0.4.0
+groq>=0.4.0
+
+# Configuration
+python-dotenv>=1.0.0
+
+# Tests
+pytest>=7.4.0
