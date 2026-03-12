@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# Visual memory persistence (auto-generated)
+visual_memory.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (large files)
+*.pth
+*.pt
+*.onnx
